@@ -1,1 +1,1 @@
-worker: python bot.py
+worker: python online_face_detection_demo.py
