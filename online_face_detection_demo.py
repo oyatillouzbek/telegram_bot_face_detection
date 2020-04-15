@@ -4,7 +4,7 @@
 
 import sys
 import telegram
-import urllib2
+import urllib3
 import cv2
 from time import sleep
 
@@ -104,7 +104,7 @@ def botWorker(counter, lastConsumedUpdate):
             # bot.download(url, newFilePath)
             # newFile.download(newFilePath)
 
-            photoFile = urllib2.urlopen(newFileUrl)
+            photoFile = urllib3.urlopen(newFileUrl)
             output = open(newFilePath,'wb')
             output.write(photoFile.read())
             output.close()
