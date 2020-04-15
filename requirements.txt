@@ -1,3 +1,3 @@
 python-telegram-bot
 opencv-python
-urllib2
+urllib3
