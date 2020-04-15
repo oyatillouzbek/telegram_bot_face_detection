@@ -88,7 +88,7 @@ def botWorker(counter, lastConsumedUpdate):
         if(updateId <= lastConsumedUpdate):
             continue
 
-        print 'updateId={}, date={}'.format(u.update_id, u.message.date)
+        print ('updateId={}, date={}'.format(u.update_id, u.message.date))
 
         if u.message.photo:
             print('There are {} photos in this update'.format(len(u.message.photo)))
