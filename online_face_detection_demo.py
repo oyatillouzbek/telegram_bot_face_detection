@@ -73,7 +73,7 @@ def botWorker(counter, lastConsumedUpdate):
         print('{}. No new updates'.format(counter))
         return lastConsumedUpdate
     else:
-        print '{}. There are {} new updates'.format(counter, numOfNewUpdates)
+        print('{}. There are {} new updates'.format(counter, numOfNewUpdates))
 
     for u in updates:
         updateId = u.update_id
@@ -94,7 +94,7 @@ def botWorker(counter, lastConsumedUpdate):
             print('There are {} photos in this update'.format(len(u.message.photo)))
             biggestPhoto = u.message.photo[-1]
             biggestPhotoFileId =  biggestPhoto.file_id
-            print 'biggestPhoto= {}x{}, fileId={}'.format(biggestPhoto.height, biggestPhoto.width,  biggestPhoto.file_id)
+            print('biggestPhoto= {}x{}, fileId={}'.format(biggestPhoto.height, biggestPhoto.width,  biggestPhoto.file_id))
 
             newFile = bot.getFile(biggestPhotoFileId)
             newFileUrl = newFile.file_path
@@ -124,7 +124,7 @@ def botWorker(counter, lastConsumedUpdate):
     # chat_id = bot.getUpdates()[-1].message.chat_id
     # bot.sendMessage(chat_id=chat_id, text="detecting ....")
 
-    print 'Last consumed update: {}'.format(lastConsumedUpdate)
+    print('Last consumed update: {}'.format(lastConsumedUpdate))
     return lastConsumedUpdate
 
 def main(argv = None):
