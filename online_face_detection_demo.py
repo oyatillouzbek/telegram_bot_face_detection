@@ -12,8 +12,8 @@ from time import sleep
 fromBotDir = 'images_from_bot'
 toBotDir = 'images_to_bot'
 
-botName = 'demo5dbot'
-botToken = 'XXXXXX'	#Create bot with 'BotFather' from Telegram
+botName = 'uzurlbot'
+botToken = '1124952210:AAFa8ZdK_cgn2YcZp7qOE9yCvNpDfuIWN6Y'	#Create bot with 'BotFather' from Telegram
 baseUrl = 'https://api.telegram.org/bot%s' % botToken
 longPoolingTimeoutSec = 60
 
